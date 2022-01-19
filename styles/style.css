@@ -14,114 +14,192 @@ body {
     ;
 }
 
-.cabecalho{
-    display:flex;
+.cabecalho {
+    display: flex;
     align-items: center;
     justify-content: space-around;
-    padding: 10px;
+    padding: 0.625rem;
 }
 
 
-.cabecalho-imagem{
-    height: 100px;
+.cabecalho-imagem {
+    height: 6rem;
 }
 
-.cabecalho-menu{
-    display:flex;
-    gap: 32px;
+.cabecalho-menu {
+    display: flex;
+    gap: 2rem;
 }
-.cabecalho-menu-item{
+
+.cabecalho-menu-item {
     font-family: 'sarala', sans-serif;
     color: #FFF2E7;
     font-weight: 400;
-    font-size: 18px;
-        padding:20px 24px;
+    font-size: 1.125rem;
+    padding: 1.25rem 1.5rem;
 }
 
-.conteudo{
-    margin-bottom: 48px;
+.conteudo {
+    margin-bottom: 3rem;
     border-top: 0.4px solid #FFF2E7;
 }
 
-.conteudo-principal{
-    display:flex;
+.conteudo-principal {
+    display: flex;
     align-items: center;
     justify-content: space-around;
 }
 
-.conteudo-principal-escrito{
-    display:flex;
+.conteudo-principal-escrito {
+    display: flex;
     flex-direction: column;
-    gap: 32px;
+    gap: 2rem;
 }
 
-.conteudo-principal-escrito-titulo{
+.conteudo-principal-escrito-titulo {
     font-family: 'Righteous', cursive;
     font-weight: 400;
-    font-size: 64px;
+    font-size: 4rem;
     color: #fff2E7;
 }
 
-.conteudo-principal-escrito-subtitulo{
+.conteudo-principal-escrito-subtitulo {
     font-family: 'sarala', sans-serif;
     font-weight: 400;
-    font-size:24px;
+    font-size: 1.5rem;
     color: #ECD6C4;
 }
 
-.conteudo-principal-escrito-botao{
+.conteudo-principal-escrito-botao {
     background-color: #ECD6C4;
-    width: 180px;
-    height:60px;
+    width: 11rem;
+    height: 3.75rem;
     border: none;
     box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
     border-radius: 20px;
     font-family: 'sarala', sans-serif;
     font-weight: 400;
-    font-size:24px;
+    font-size: 1.5rem;
     color: #2f2325;
 }
-.conteudo-principal-escrito-botao:hover{
+
+.conteudo-principal-escrito-botao:hover {
     background-color: rgba(236, 214, 196, 0.53);
 }
 
 
 
-.conteudo-principal-imagem{
-    height: 430px;
+.conteudo-principal-imagem {
+    height: 26rem;
 }
 
-.conteudo-secundario{
+.conteudo-secundario {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 42px;
-    margin-top: 48px;
+    gap: 2.625rem;
+    margin-top: 3rem;
 }
 
-.conteudo-secundario-titulo{
+.conteudo-secundario-titulo {
     border-top: 0.4px solid #FFF2E7;
-    padding-top: 48px;
-font-family: 'Righteous', cursive;
-font-weight: 400;
-font-size:24px;
-color: #FFF2EF;
-margin-bottom: 16px;
+    padding-top: 3rem;
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    font-size: 3rem;
+    color: #FFF2EF;
+    margin-bottom: 1rem;
 }
 
-.conteudo-secundario-paragrafo{
+.conteudo-secundario-paragrafo {
     font-family: 'sarala', sans-serif;
     font-weight: 300;
-    font-size:18px; 
+    font-size: 1.125rem;
     color: #ECD6C4;
 }
 
-.rodape{
-    padding:32px;
+.rodape {
+    padding: 2rem;
     border-top: 0.4px solid #FFF2E7;
 }
-.rodape-imagem{
-    height:48px;
-    display:block;
+
+.rodape-imagem {
+    height: 3rem;
+    display: block;
     margin: 0 auto;
+}
+
+
+@media (max-width:768px) {
+
+    html {
+        font-size: 80%;
+    }
+
+    .cabecalho-imagem {
+        height: 60px;
+    }
+
+    .cabecalho {
+        gap: 0;
+        background: #8E5D52;
+    }
+
+    .cabecalho-menu-item {
+        padding: 0 2px 2px 2px;
+    }
+
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .conteudo-principal img {
+        order: -1;
+        height: 200px;
+
+    }
+    .conteudo-principal-escrito{
+        gap: 10px;
+        align-items: center;
+        padding-top: 12px;
+    }
+
+}
+
+@media (max-width:425px) {
+
+    html {
+        font-size: 60%;
+    }
+
+    .cabecalho-imagem {
+        height: 60px;
+    }
+
+    .cabecalho {
+        gap: 0;
+        background: #8E5D52;
+    }
+
+    .cabecalho-menu-item {
+        padding: 0 2px 2px 2px;
+    }
+
+    .conteudo-principal {
+        flex-direction: column;
+    }
+
+    .conteudo-principal img {
+        order: -1;
+        height: 200px;
+
+    }
+    .conteudo-principal-escrito{
+        gap: 10px;
+        align-items: center;
+        padding-top: 12px;
+    }
+.conteudo-secundario{
+    padding: 1.125rem;
+}
 }
