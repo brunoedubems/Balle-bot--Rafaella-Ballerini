@@ -143,8 +143,8 @@ body {
     .cabecalho {
         gap: 0;
         background: #8E5D52;
-            justify-content: space-between;
-      
+        justify-content: space-between;
+
     }
 
     .cabecalho-menu-item {
@@ -192,15 +192,15 @@ body {
         margin-right: 20px;
     }
 
-.menu-section.on{
-    position: absolute;
-    top: 0;
-    left:0;
-    width: 100vw;
-    height: 100vh;
-    background-color: #8E5D52;
-    z-index: 10;
-}
+    .menu-section.on {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #8E5D52;
+        z-index: 10;
+    }
 
 
 }
