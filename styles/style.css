@@ -199,9 +199,11 @@ body {
         width: 100vw;
         height: 100vh;
         background-color: #8E5D52;
-        z-index: 10;
+        /* z-index: 10; */
     }
-
+    .cabecalho-menu{
+        display: block;
+    }
 
 }
 
@@ -211,7 +213,6 @@ body {
     html {
         font-size: 60%;
     }
-
 
     .cabecalho-imagem {
         height: 60px;
@@ -225,8 +226,6 @@ body {
     .cabecalho-menu-item {
         padding: 0 2px 2px 2px;
     }
-
-
 
     .conteudo-principal {
         flex-direction: column;
